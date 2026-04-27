@@ -1,0 +1,15 @@
+{
+  "name": "Python Multiprocessing",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.14.4"
+    }
+  },
+  "postCreateCommand": "pip install uv",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
