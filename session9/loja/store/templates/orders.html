@@ -1,0 +1,15 @@
+<h1>Orders</h1>
+
+{% for order in orders %}
+  <h3>Order {{ order.id }}</h3>
+
+  <ul>
+    {% for item in order.cart %}
+      <li>
+        {{ item.name }} - {{ item.quantity }} x {{ item.price }}€
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>Total: {{ order.get_total }}</p>
+{% endfor %}

@@ -1,0 +1,13 @@
+<h1>Products</h1>
+
+<ul>
+  {% for product in products %}
+    <li>
+      {{ product.name }} - {{ product.price }}€
+
+      <a href="/add/{{ product.id }}/">
+        ➕ Add to cart
+      </a>
+    </li>
+  {% endfor %}
+</ul>
